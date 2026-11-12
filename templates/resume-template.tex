@@ -1,0 +1,89 @@
+% AI engineer resume template, single column, ATS-friendly.
+% Written from scratch for the ai-engineer-resume-examples repo. MIT license (see LICENSE).
+% Compile with pdflatex. Only standard packages.
+
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+
+% Make the PDF text map cleanly to Unicode so parsers read it.
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+
+% Section headings: plain words, a rule underneath.
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-6pt}\rule{\linewidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Bullets: tight spacing.
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% \role{Title}{Company}{Location}{Dates}
+\newcommand{\role}[4]{%
+    \textbf{#1}, #2 \hfill #4\\
+    \textit{#3}\par
+}
+
+% \project{Name}{Description}{Tech}{Dates}
+\newcommand{\project}[4]{%
+    \textbf{#1}, #2 \hfill #4\\
+    \textit{#3}\par
+}
+
+\begin{document}
+
+% Header. Keep links as visible text.
+\begin{center}
+    {\LARGE\bfseries Your Name}\\[3pt]
+    City, State \textbar{} you@example.com \textbar{} (555) 010-0000\\
+    \href{https://github.com/your-handle}{github.com/your-handle} \textbar{}
+    \href{https://your-site.example.com}{your-site.example.com}
+\end{center}
+
+\section{Summary}
+Optional, 2 to 3 lines. Name your background, what you build now, and one result.
+
+\section{Experience}
+
+\role{Job Title}{Company}{City, State}{Mon YYYY to present}
+\begin{itemize}
+    \item Action + what you built + scale or number + outcome.
+    \item Action + what you built + scale or number + outcome.
+    \item Action + what you built + scale or number + outcome.
+\end{itemize}
+
+\role{Job Title}{Company}{City, State}{Mon YYYY to Mon YYYY}
+\begin{itemize}
+    \item Action + what you built + scale or number + outcome.
+    \item Action + what you built + scale or number + outcome.
+\end{itemize}
+
+\section{Projects}
+
+\project{Project Name}{one-line description}{Python, Postgres + pgvector, FastAPI}{YYYY}
+\begin{itemize}
+    \item What it does and who used it (how many).
+    \item The hardest decision and what you measured.
+\end{itemize}
+
+\section{Education}
+\textbf{Degree, Field}, School \hfill YYYY
+
+\section{Skills}
+\textbf{Languages:} Python, TypeScript, SQL\\
+\textbf{LLM and retrieval:} RAG, hybrid search, reranking, tool calling, structured output\\
+\textbf{Evals and ops:} golden sets, LLM-as-judge, tracing\\
+\textbf{Infra:} cloud, databases, containers
+
+\end{document}
