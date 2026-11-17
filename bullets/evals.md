@@ -1,6 +1,6 @@
 # Bullet bank: evals
 
-20 bullets for evaluation, testing and quality work on LLM systems. Hiring managers read these first in 2026. Replace every `[placeholder]` with your own numbers and nouns.
+24 bullets for evaluation, testing and quality work on LLM systems. Hiring managers read these first in 2026. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values.
 
@@ -24,3 +24,14 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Reduced eval run time from [A] minutes to [B] minutes by caching model outputs and parallelizing, so engineers run it before every change.
 19. Built task-specific metrics (field-level F1, citation precision, tool-call accuracy) to replace a single generic quality score.
 20. Published an open eval set of [N] examples for [domain], used by [N] external projects.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Built a [N]-case eval suite from production failures and expert-written edge cases that caught [N] regressions before release across [N] model and prompt changes in [period].
+22. Calibrated an LLM judge against [N] double-reviewed examples, raising agreement with expert labels from [A]% to [B]%, and kept human review for [category] where it still disagreed.
+23. Built deterministic graders for [tool workflow] that check the final system state instead of the response text, exposing [N] runs the old grader had marked as successes.
+24. Added quality, latency and cost gates to CI that block a release on more than [X%] regression on [critical slice], cutting eval turnaround from [A] to [B] hours.

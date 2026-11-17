@@ -1,6 +1,6 @@
 # Bullet bank: RAG and search
 
-20 bullets for retrieval-augmented generation, search and knowledge assistants. Replace every `[placeholder]` with your own numbers and nouns. If you can't fill a placeholder honestly, pick a different bullet.
+24 bullets for retrieval-augmented generation, search and knowledge assistants. Replace every `[placeholder]` with your own numbers and nouns. If you can't fill a placeholder honestly, pick a different bullet.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values, `[metric]` the measure you used.
 
@@ -24,3 +24,14 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Added conversational memory to the assistant (query condensation over the last [N] turns), lifting follow-up question accuracy from [A]% to [B]%.
 19. Diagnosed a [X%] accuracy drop to [stale index / chunking bug / embedding model change] within [N] hours using retrieval traces, and added an alert for it.
 20. Wrote the internal RAG playbook used by [N] teams, covering chunking, hybrid search, reranking and evaluation.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Raised retrieval recall@5 from [A]% to [B]% on [N] held-out support queries by combining keyword and vector search with a reranker, and lifted the share of answers users accepted with a citation from [A]% to [B]% over [period].
+22. Cut p95 retrieval latency from [A]ms to [B]ms at [N] queries per second by tuning metadata filters and index settings, keeping recall@[k] within [N] points of the baseline on the same [N]-query set.
+23. Built incremental ingestion for [N]K documents with versioned chunks, idempotent updates and deletion propagation, cutting freshness lag from [A] hours to [B] minutes, measured on [date].
+24. Built permission-aware retrieval for [N] teams that blocked unauthorized results in all [N] access-control test cases, while answer success on authorized queries stayed at [X%] against a [B]% baseline.

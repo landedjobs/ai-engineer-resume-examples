@@ -1,6 +1,6 @@
 # Bullet bank: fine-tuning and post-training
 
-20 bullets for fine-tuning, distillation and preference training. Replace every `[placeholder]` with your own numbers and nouns. Only claim the method you used: interviewers ask about it.
+24 bullets for fine-tuning, distillation and preference training. Replace every `[placeholder]` with your own numbers and nouns. Only claim the method you used: interviewers ask about it.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values.
 
@@ -24,3 +24,16 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Wrote the data card and model card for [model], covering data sources, known failure cases and evaluation results.
 19. Reduced labeling cost by [X%] with model-assisted labeling and active learning, while keeping label accuracy above [Y%].
 20. Decided against fine-tuning for [task] after a [N]-week study showed retrieval fixes gave [X%] more lift; documented it as the team's reference.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+Name the method you actually used. LoRA, for example, freezes the pretrained weights and trains small low-rank matrices ([Hu et al., 2021](https://arxiv.org/abs/2106.09685)); it is not full fine-tuning.
+
+21. Fine-tuned [model] with LoRA on [N]K deduplicated examples, raising held-out [metric] from [A] to [B] against the prompted base model, in [N] GPU-hours on [hardware].
+22. Built a preference set of [N]K reviewed pairs and trained with [DPO / other method], raising blinded human preference from [A]% to [B]% across [N] held-out comparisons.
+23. Reproduced [paper / method] across [N] seeds, isolated [factor] with ablations, and reported the mean result with run-to-run spread in a written experiment report.
+24. Added leakage checks and versioned train, validation and test splits to the training pipeline, removing [N] overlapping examples and setting an auditable [metric] baseline before [model] shipped.

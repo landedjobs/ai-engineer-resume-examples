@@ -8,12 +8,12 @@
 
 [![Stars](https://img.shields.io/github/stars/landedjobs/ai-engineer-resume-examples?style=social)](https://github.com/landedjobs/ai-engineer-resume-examples)
 [![License: MIT](https://img.shields.io/badge/License-MIT-6C2BD9.svg)](LICENSE)
-[![Updated](https://img.shields.io/badge/updated-2026--11-00A86B)](#faq)
+[![Updated](https://img.shields.io/badge/updated-2026--11-00A86B)](#whats-new)
 [![Examples](https://img.shields.io/badge/example%20resumes-8-6C2BD9)](examples/)
-[![Bullets](https://img.shields.io/badge/bullets-160-6C2BD9)](bullets/)
+[![Bullets](https://img.shields.io/badge/bullets-191-6C2BD9)](bullets/)
 [![Visit Landed](https://img.shields.io/badge/Visit-Landed-6C2BD9?logo=rocket&logoColor=white)](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-ai-engineer-resume-examples&utm_content=repo-home)
 
-**AI engineer resume examples for 2026**: 8 full example resumes by level, 160 bullets in 8 banks, 20 before/after rewrites, and Markdown and LaTeX templates.
+**AI engineer resume examples for 2026**: 10 full example resumes by level and background, 191 bullets in 8 banks, 20 before/after rewrites, sourced ATS facts, and Markdown and LaTeX templates.
 
 *Maintained by [Landed](https://www.landed.jobs/?utm_source=github&utm_medium=referral&utm_campaign=github-ai-engineer-resume-examples&utm_content=repo-home): daily AI-native job matches, agent help with every application, and mock-interview prep.*
 
@@ -38,27 +38,49 @@ This repo shows how to say so. Every example person is fictional, and so are the
 - [The one-page rules](#the-one-page-rules)
 - [The bullet formula](#the-bullet-formula)
 - [Examples index](#examples-index)
+- [AI vs ML vs LLM engineer: what each resume must prove](roles.md) 🆕
+- [Tailor to a posting](tailoring.md) 🆕
+- [Make your projects inspectable](projects.md) 🆕
 - [Before and after: 20 bullet rewrites](#before-and-after-20-bullet-rewrites)
 - [Section by section](#section-by-section)
-- [ATS notes](#ats-notes)
+- [ATS facts and myths](#ats-notes)
 - [Common mistakes](#common-mistakes)
 - [FAQ](#faq)
 - [Contributing](#contributing)
+- [What's new](#whats-new)
 
 ## What AI engineering hiring managers scan for in 2026
 
-A hiring manager for an AI engineering role reads your resume looking for answers to five questions. Most of them won't read past the first third of the page if those answers aren't there.
+*Last checked: 17 Nov 2026*
 
-1. **Did you ship something real people used?** Production beats prototype. One system with users, traffic and an on-call story is worth more than five notebooks. Say who used it and how many.
-2. **How did you know it worked?** This is the 2026 filter. Teams got burned by demos that fell apart in production, so they look for evals: a golden set, a metric, a number that moved. If your resume never mentions measuring quality, it reads as junior no matter your title.
-3. **What did it cost, and how fast was it?** Latency and cost per request are now part of the job. A bullet that cut p95 latency from 4.1s to 1.3s or dropped cost per resolved ticket by 60% tells them you've run this in production.
+Start with what recruiters have said in public. Then our own advice on how to answer it.
+
+**What OpenAI says about reading resumes**
+
+- **People read them, and fast.** Selena Ma, OpenAI's Head of Recruiter Programs, said "At OpenAI, we read resumes" in a [February 2026 OpenAI Forum talk](https://forum.openai.com/public/videos/event-replay-get-hired-using-chatgpt-tips-from-openais-head-of-recruiter-programs-2026-02-05). In the same talk she guessed a recruiter spends about a minute, maybe 30 seconds, on one.
+- **Two readers, in order.** Ma said the sourcer or recruiter reads first and the hiring manager second. Recruiters for technical roles are often not engineers. So give enough context that a non-engineer sees what you did and why it fits the job, then show impact, relevant skills and a clear layout for the hiring manager.
+- **Ownership over tool lists.** Sarah Warkov, an OpenAI sourcer who said she reviews over 1,000 applicants a month, said "What stands out is ownership" in an [OpenAI Forum recruiting talk](https://forum.openai.com/public/videos/event-replay-careers-at-the-frontier-inside-openais-recruiting-process-2025-08-28) (recorded August 2025). She said building something end to end, or taking initiative when things are unclear, is a stronger signal than listing every technology you've used. She also asked for "outcomes, not just responsibilities", with metrics.
+- **Honest tailoring.** Ma said "You can't lie about your resume or inflate", and that you should still tailor the resume to each kind of job you apply for.
+- **Résumé review is the first step.** [OpenAI's interview guide](https://openai.com/interview-guide) (checked 17 Nov 2026) lists application and résumé review first, says the team typically replies within a week, and says it is "not credential-driven".
+
+**What is not known.** No source we found gives a fixed reading order inside a resume (school, then employer, then skills, and so on). Ma's 30 seconds is her estimate, not a measurement. Treat any precise "recruiters look at X first for 6 seconds" claim with doubt.
+
+**A documented negative signal.** Elicit wrote in [March 2026](https://elicit.com/blog/engineering-interviews-in-the-era-of-agents) that AI-generated code nobody has reviewed or understood is a red flag in its interviews. That is about interviews, not resumes. Still, a resume that claims AI work you can't explain line by line will fall apart at that stage.
+
+**Our advice: answer five questions near the top of the page**
+
+These five questions are how we read AI engineering resumes. They follow from the points above, but the framing is ours.
+
+1. **Did you ship something real people used?** Production beats prototype. One system with users, traffic and an on-call story is worth more than five notebooks. Say who used it and how many. This is the ownership Warkov describes.
+2. **How did you know it worked?** In our view this is the 2026 filter. Demos that fall apart in production taught teams to look for evals: a golden set, a metric, a number that moved. If your resume never mentions measuring quality, we think it reads as junior whatever your title.
+3. **What did it cost, and how fast was it?** Latency and cost per request are part of the job. A bullet that cut p95 latency from 4.1s to 1.3s, or dropped cost per resolved ticket by 60%, shows you've run this in production.
 4. **Can you work below the API call?** Retrieval quality, chunking, reranking, tool design, caching, batching, fine-tuning, serving. You don't need all of it. You need depth in two or three, stated plainly.
-5. **Is the stack current?** Tool names matter less than people think, but a resume full of 2022 patterns (LangChain prompt templates and nothing else) reads as out of date. Name what you used and why.
+5. **Is the stack current?** Tool names matter less than people think, but a resume full of 2022 patterns (LangChain prompt templates and nothing else) reads as out of date to us. Name what you used and why.
 
-What they mostly skip: a long skills list, an objective statement, course certificates, and any bullet that starts with "Responsible for".
+What we'd cut first: a long skills list, an objective statement, course certificates, and any bullet that starts with "Responsible for".
 
 > [!TIP]
-> Read your resume as the hiring manager would: cover everything except the top third of page one. Does that top third answer "shipped, measured, cost-aware"? If not, move your strongest bullet up.
+> Read your resume as a recruiter with 30 seconds would: cover everything except the top third of page one. Does that top third answer "shipped, measured, cost-aware" in words a non-engineer can follow? If not, move your strongest bullet up.
 
 ## The one-page rules
 
@@ -90,11 +112,11 @@ Two rules on top of the formula:
 - **Name the measurement.** "Improved accuracy by 17 points" is weaker than "from 71% to 88% on a 600-question golden set." The second one tells the reader you built an eval.
 - **One idea per bullet.** If a bullet needs "and" twice, split it.
 
-The [bullet banks](bullets/) have 160 bullets in this shape with `[N]` placeholders for your own numbers.
+The [bullet banks](bullets/) have 191 bullets in this shape with `[N]` placeholders for your own numbers.
 
 ## Examples index
 
-All 8 people are fictional. Names, employers, schools and numbers are invented to be plausible. Any resemblance to a real person is a coincidence.
+All 10 people are fictional. Names, employers, schools and numbers are invented to be plausible. Any resemblance to a real person is a coincidence.
 
 | Role | Level | File |
 |---|---|---|
@@ -106,8 +128,12 @@ All 8 people are fictional. Names, employers, schools and numbers are invented t
 | ML engineer moving to LLM work | Mid to senior | [examples/06-ml-engineer-to-llm.md](examples/06-ml-engineer-to-llm.md) |
 | Forward-deployed engineer (AI) | Mid | [examples/07-forward-deployed-engineer.md](examples/07-forward-deployed-engineer.md) |
 | AI product manager (technical) | Senior | [examples/08-ai-product-manager.md](examples/08-ai-product-manager.md) |
+| Data scientist moving into AI engineering 🆕 | Mid | [examples/09-data-scientist-to-ai-engineer.md](examples/09-data-scientist-to-ai-engineer.md) |
+| Research engineer 🆕 | Mid to senior | [examples/10-research-engineer.md](examples/10-research-engineer.md) |
 
-Each file has the full resume, then notes on why it works, then what to change when you apply to a frontier lab, a startup or an enterprise.
+Each file has the full resume, then notes on why it works, then what to change when you apply to a frontier lab, a startup or an enterprise. Not sure which fits? See [what each role's resume must prove](roles.md).
+
+Your projects are the evidence behind these bullets. See [make your projects inspectable](projects.md), and the step-by-step [portfolio build guides](https://github.com/landedjobs/ai-engineer-portfolio-projects/tree/main/guides). Got the interview? Prepare with the [interview repo](https://github.com/landedjobs/awesome-ai-engineer-interview) and the [system design repo](https://github.com/landedjobs/ai-system-design-interview).
 
 ### Tailor one of these to a real job
 
@@ -193,15 +219,56 @@ If your title is "Software Engineer" but you did AI engineering, keep the real t
 
 Degree, school, year. Add GPA only if it's high and you graduated in the last 2 years. Relevant coursework only for new grads, and only courses the role cares about. Certificates from online courses go last or nowhere.
 
-## ATS notes
+<a name="ats-notes"></a>
 
-Most companies run applications through an applicant tracking system (Greenhouse, Lever, Ashby, Workday and others). These systems parse your resume into fields, and recruiters search and filter on those fields. Some now add AI screening on top. The honest version of what matters:
+## ATS facts and myths
 
-- **Plain layout parses.** Single column, standard fonts, no text inside images, no tables for layout, no headers or footers holding your contact details. A parser that can't read your layout shows the recruiter garbled text.
-- **Standard headings.** "Experience", "Projects", "Education", "Skills". Clever headings like "Where I've made an impact" can land your jobs in the wrong field.
-- **Keywords from the posting, used truthfully.** Recruiters search for terms like "RAG", "evals", "Kubernetes" or "PyTorch". If the posting names a tool you've used, write that exact term somewhere a human would expect it. Don't paste a hidden keyword block in white text. Parsers read it, recruiters see it in the plain-text view, and it ends the application.
-- **There is no magic score.** Tools that rate your resume "ATS-friendly" check format and keyword overlap. That's useful as a check, not as a goal. A human still decides.
-- **PDF is fine** for almost every modern ATS. Use .docx only when the posting asks for it.
+*Last checked: 17 Nov 2026*
+
+An applicant tracking system (ATS) such as Greenhouse, Lever, Ashby or Workday does several separate jobs, and most ATS myths come from mixing them up:
+
+- **Parsing** copies text from your file into profile fields (name, contact details, work history).
+- **Search** lets a recruiter find candidates by keyword later.
+- **Rules** can act on your answers to application questions, including rejecting you automatically.
+- **Ranking or AI review**, where a company turns it on, scores you against criteria that company wrote.
+
+A bad parse affects the first. Keywords affect the second. Knockout questions affect the third. None of them is a single "ATS score".
+
+**Facts, from the vendors' own docs**
+
+| Fact | Source |
+|---|---|
+| Parsing fills in profile fields from your resume. It is not a hiring decision. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse), [Lever](https://help.lever.co/s/article/Understanding-Resume-Parsing) |
+| PDF and Word files both parse. Lever lists Word (including .docx), PDF, RTF, HTML and ODF. | [Lever](https://help.lever.co/s/article/Understanding-Resume-Parsing) |
+| Image files and scanned resumes don't parse. Lever's test: if you can't highlight the text, it likely can't be parsed. | [Lever](https://help.lever.co/s/article/Understanding-Resume-Parsing), [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) |
+| Columns, tables, headers, footers, text boxes, graphics and spaced-out letters can cause a partial parse. So can contact details placed in a header or footer. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) |
+| Greenhouse can't parse resumes larger than 2.5MB. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) |
+| Greenhouse also lists abbreviated job titles ("Sr. Account Exec") and missing section structure as parse problems. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse) |
+| Recruiters can run full-text Boolean searches (AND, OR, NOT, exact phrases) that cover resume text. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/202360199-Search-candidates-using-Boolean-queries) |
+| Automatic rejection exists, but in Greenhouse it is a rule on yes/no or select-type application questions, set up by the employer. | [Greenhouse](https://support.greenhouse.io/hc/en-us/articles/360000653472-Auto-reject) |
+| Ashby's AI review checks resumes against criteria each employer writes for each job. Recruiters can sort by the percentage of criteria met. | [Ashby](https://docs.ashbyhq.com/ai-assisted-application-review) |
+
+**Myths**
+
+| Myth | Why it's wrong |
+|---|---|
+| "ATS systems reject PDFs." | Lever lists PDF as a parseable format. Follow the posting if it asks for a specific file type. |
+| "Any PDF is fine." | Not if it's an image. A scanned or exported-as-picture PDF has no text to parse. |
+| "Two columns get you auto-rejected." | Greenhouse says columns may cause a partial parse that someone corrects by hand. That's friction, not rejection. Single column is still the safe default. |
+| "If the parse fails, your application is gone." | Greenhouse says the resume stays attached to the candidate and the details are entered manually. |
+| "The ATS rejects you for missing keywords." | In the docs above, keywords power recruiter search. Automatic rejection comes from rules on application questions. |
+| "Every ATS gives you the same match score." | There is no shared score. Ashby's percentage is based on criteria that one employer wrote for one job. A third-party "ATS score" is an editing aid, not what the employer sees. |
+| "Keywords don't matter at all." | Recruiters search resume text. If you've used a tool the posting names and it's missing from your resume, a search won't find you. |
+
+**Case study: a failed parse is not a rejection.** Greenhouse's help page says that when a resume can't be parsed, the recruiter sees a message that the resume was only attached, and the fields need to be filled in by hand ([Greenhouse](https://support.greenhouse.io/hc/en-us/articles/200989175-Unsuccessful-resume-parse)). Formatting problems can also give a partial parse that someone must correct. So a fancy layout costs you in friction and garbled fields, not in a hidden auto-reject. That is still worth avoiding: a recruiter fixing your fields by hand is not a good start.
+
+**Keywords without stuffing.** Our advice:
+
+- Use the posting's exact term where it truthfully describes your work, in a bullet a human would read, not only in the skills line.
+- Write the full term and the acronym once: "retrieval-augmented generation (RAG)". People search for either.
+- Name tools you've actually used, and tie the important ones to a result.
+- Don't paste a hidden keyword block in white text. Parsers read it, recruiters can see it in plain-text views, and no source we found shows it helps.
+- Answer knockout questions (work authorization, location, required licenses) carefully. In Greenhouse those are what can reject you automatically.
 
 To check format and keyword overlap against a specific posting, the free [landed ATS resume checker](https://www.landed.jobs/tools/ats-resume-checker?utm_source=github&utm_medium=referral&utm_campaign=github-ai-engineer-resume-examples&utm_content=ats-checker) does both. For how AI screening works in 2026 and what it does and doesn't penalize, read [How to beat AI resume screening in 2026](https://www.landed.jobs/articles/beat-ai-resume-screening-ats-2026?utm_source=github&utm_medium=referral&utm_campaign=github-ai-engineer-resume-examples&utm_content=ats-article).
 
@@ -217,6 +284,17 @@ To check format and keyword overlap against a specific posting, the free [landed
 8. **A project section full of tutorials.** A course capstone that 10,000 other people built adds nothing. Change it until it's yours, then measure it.
 9. **Stale links.** A dead demo link is worse than no link. Check them all the day you apply.
 10. **The same resume for a lab, a startup and a bank.** Each example in this repo ends with what to change for each. Do that.
+
+## What's new
+
+**November 2026**
+
+- 🆕 [What each role's resume must prove](roles.md): AI engineer, ML engineer, LLM engineer, research engineer and FDE, each with current job postings.
+- 🆕 [Tailor to a posting](tailoring.md): a method and a worked example on a real AI engineer posting.
+- 🆕 [Make your projects inspectable](projects.md): what to link, where, and how.
+- 🆕 Two example resumes: [data scientist moving into AI engineering](examples/09-data-scientist-to-ai-engineer.md) and [research engineer](examples/10-research-engineer.md).
+- 31 new bullets (191 in total), an [evaluation vocabulary](bullets/README.md) section, and real bullets from public resumes, linked.
+- "What hiring managers scan for" now cites what OpenAI recruiters have said publicly; the ATS notes are now facts and myths, each fact linked to the ATS vendor's own docs.
 
 ## FAQ
 

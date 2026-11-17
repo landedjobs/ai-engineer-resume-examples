@@ -1,6 +1,6 @@
 # Example resumes
 
-8 full example resumes for AI roles, one per file. Every person, employer, school and number is fictional and invented to be plausible for the level. Any resemblance to a real person is a coincidence.
+10 full example resumes for AI roles, one per file. Every person, employer, school and number is fictional and invented to be plausible for the level. Any resemblance to a real person is a coincidence.
 
 | # | Role | Level | File |
 |---|---|---|---|
@@ -12,6 +12,8 @@
 | 06 | ML engineer moving to LLM work | Mid to senior | [06-ml-engineer-to-llm.md](06-ml-engineer-to-llm.md) |
 | 07 | Forward-deployed engineer (AI) | Mid | [07-forward-deployed-engineer.md](07-forward-deployed-engineer.md) |
 | 08 | AI product manager (technical) | Senior | [08-ai-product-manager.md](08-ai-product-manager.md) |
+| 09 | Data scientist moving into AI engineering | Mid, 4 years | [09-data-scientist-to-ai-engineer.md](09-data-scientist-to-ai-engineer.md) |
+| 10 | Research engineer (LLM evals and post-training) | Mid, 3 years | [10-research-engineer.md](10-research-engineer.md) |
 
 Each file has three parts:
 

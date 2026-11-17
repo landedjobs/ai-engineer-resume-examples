@@ -1,6 +1,6 @@
 # Bullet bank: agents and tool use
 
-20 bullets for agents, tool calling, workflows and MCP. Replace every `[placeholder]` with your own numbers and nouns.
+25 bullets for agents, tool calling, workflows and MCP. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values.
 
@@ -24,3 +24,15 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Designed the agent's state and resume logic so long tasks survive restarts; [N]-hour runs now finish at a [X%] rate, up from [A]%.
 19. Built a voice agent that [books appointments / qualifies leads] over the phone, handling [N] calls a week with [X%] completion and [N]ms response latency.
 20. Wrote the team's agent design guide (when to use a workflow vs an agent, tool design, step limits, evals), adopted by [N] teams.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Raised verified task completion from [A]% to [B]% on [N] held-out workflow cases by replacing free tool choice with typed actions, input validation and explicit recovery paths, checked against final system state.
+22. Cut cost per successful agent task from [$A] to [$B] with model routing and context trimming, keeping completion above [X%] on the same [N]-case eval set.
+23. Added resumable execution and idempotent tool calls to the [workflow] agent, recovering [X%] of interrupted runs and cutting duplicate external actions from [A] to [B] per [N] tasks over [period].
+24. Added approval gates for [refunds / deletes / outbound email] that stopped execution in all [N] unauthorized-action tests, with median reviewer handling time under [N] seconds across [N] reviews.
+25. Replaced a multi-agent prototype with a fixed workflow plus one model step, cutting p95 completion time from [A]s to [B]s with no drop in task success on [N] held-out cases.

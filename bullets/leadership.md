@@ -1,6 +1,6 @@
 # Bullet bank: leadership
 
-20 bullets for senior, staff and lead roles, with or without a manager title. Leadership bullets need outcomes too. "Mentored engineers" says nothing; "mentored 4 engineers, 2 promoted" says something. Replace every `[placeholder]` with your own numbers and nouns.
+22 bullets for senior, staff and lead roles, with or without a manager title. Leadership bullets need outcomes too. "Mentored engineers" says nothing; "mentored 4 engineers, 2 promoted" says something. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values, `[$N]` a dollar amount.
 
@@ -24,3 +24,12 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Owned the AI budget of [$N] a year, reporting cost per feature monthly to leadership.
 19. Coached [N] product managers on writing AI specs with eval criteria, used for every AI launch since [date].
 20. Built the hiring rubric for AI engineers, raising onsite-to-offer rate from [A]% to [B]% with no drop in 6-month performance ratings.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Expanded [AI workflow] from [N] pilot teams to [N] production teams by standardizing onboarding, permissions, evaluation and support, cutting setup time from [A] to [B] days.
+22. Stopped the rollout of [approach] after a controlled evaluation on [N] cases showed [failure rate / cost]; shipped [simpler alternative] that met [quality bar] at [$N] per successful task.

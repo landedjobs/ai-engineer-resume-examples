@@ -1,6 +1,6 @@
 # Bullet bank: data pipelines
 
-20 bullets for ingestion, parsing, labeling and data infrastructure behind AI systems. Replace every `[placeholder]` with your own numbers and nouns.
+25 bullets for ingestion, parsing, labeling and data infrastructure behind AI systems. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values.
 
@@ -24,3 +24,15 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Reduced pipeline failure rate from [A]% to [B]% with dead-letter queues, retries with backoff and per-source health checks.
 19. Built data retention and deletion jobs that remove user data from indexes and logs within [N] days of a request.
 20. Documented every data source used by AI features (owner, freshness, permissions), the input for the company's AI inventory.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Built a versioned ingestion pipeline for [N]M records a day, cutting processing time from [A] to [B] hours with partitioned runs and checkpointed retries, measured over [period].
+22. Raised training-label agreement from [A] to [B] by rewriting guidelines and adjudicating [N] disputed examples, and linked each label version to the model and eval runs that used it.
+23. Removed [X%] duplicate and near-duplicate training content with [MinHash / embeddings], then measured the effect on held-out [metric] and on a [N]-prompt memorization test.
+24. Built PII filtering and access controls for [dataset], catching [X%] of labeled sensitive items on a [N]-item audit set, with the remaining misses written up and tracked.
+25. Added data-quality checks, lineage and backfills to [pipeline], cutting training runs that failed on bad data from [A] to [B] per [month / quarter].

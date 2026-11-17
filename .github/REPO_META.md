@@ -2,7 +2,7 @@
 
 ## Description
 
-AI engineer resume examples for 2026: 8 full example resumes by level (new grad to staff, ML-to-LLM, FDE, AI PM), 160 bullets for RAG, agents, evals and inference, before/after rewrites, and Markdown and LaTeX templates.
+AI engineer resume examples for 2026: 10 full example resumes by level and background (new grad to staff, ML-to-LLM, data science to AI, research engineer, FDE, AI PM), 191 bullets for RAG, agents, evals and inference, before/after rewrites, and Markdown and LaTeX templates.
 
 ## Topics
 

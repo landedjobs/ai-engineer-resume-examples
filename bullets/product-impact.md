@@ -1,6 +1,6 @@
 # Bullet bank: product impact
 
-20 bullets that connect AI work to users and the business. Use one or two of these per role; they are often the bullets that get you the interview. Replace every `[placeholder]` with your own numbers and nouns.
+23 bullets that connect AI work to users and the business. Use one or two of these per role; they are often the bullets that get you the interview. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values, `[$N]` a dollar amount.
 
@@ -24,3 +24,13 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Partnered with [sales / success] on [N] enterprise deals, building the demos and evals that closed [$N] in new contracts.
 19. Shipped an internal AI tool for [team] used by [N] of [N] people daily, cutting [task] from [A] to [B].
 20. Wrote the public launch post and docs for [feature]; [N] developers adopted the API in the first month.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Launched [AI feature] to [N] eligible users, reaching [N] weekly active users and [X%] repeat use over [period]; owned the integration, instrumentation and iteration.
+22. Cut median handling time for [task] from [A] to [B] minutes in a [pilot / A/B test] with [N] users, with expert-reviewed quality held at or above [X%].
+23. Raised the accepted-suggestion rate from [A]% to [B]% by studying rejected outputs and redesigning how evidence is shown, measured across [N]K suggestions to [N] users.

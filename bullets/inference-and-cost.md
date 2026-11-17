@@ -1,6 +1,6 @@
 # Bullet bank: inference, latency and cost
 
-20 bullets for serving, latency and cost work. Replace every `[placeholder]` with your own numbers and nouns.
+24 bullets for serving, latency and cost work. Replace every `[placeholder]` with your own numbers and nouns.
 
 Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after values, `[$N]` a dollar amount.
 
@@ -24,3 +24,14 @@ Placeholders: `[N]` a count, `[X%]` a percentage, `[A]`/`[B]` before and after v
 18. Negotiated and measured a move to [provider / committed-use pricing], saving [$N] a year with no code changes to callers.
 19. Profiled the agent's token use per step and removed [N] redundant calls, cutting cost per task by [X%].
 20. Wrote the cost and latency budget for every AI feature at launch, reviewed with finance each quarter.
+
+## More bullets (Nov 2026)
+
+These add the conditions that make a number checkable: the size of the test set, the baseline, the load and the date. Every number is still a placeholder; keep a condition only if it is true for your work. See [evaluation vocabulary to get right](README.md#evaluation-vocabulary-to-get-right) for the terms.
+
+Last checked: 17 Nov 2026
+
+21. Raised serving throughput from [A] to [B] tokens a second on [N] [GPU type] at [N] concurrent requests with [continuous batching / a serving change], keeping p95 time to first token under [N]ms.
+22. Quantized [model] from [FP16] to [INT8 / FP8 / 4-bit], cutting GPU memory from [A] to [B] GB while [task metric] fell by no more than [N] points on a [N]-case eval.
+23. Cut p95 end-to-end response time from [A]s to [B]s by streaming output and running independent I/O in parallel, measured on [N] production requests with similar input and output lengths.
+24. Built canary releases and one-step rollback for [N] model versions, cutting recovery time from [A] to [B] minutes and holding [X%] availability over [period].
